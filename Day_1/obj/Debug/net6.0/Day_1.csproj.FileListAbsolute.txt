@@ -1,0 +1,15 @@
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/Day_1
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/Day_1.deps.json
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/Day_1.runtimeconfig.json
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/Day_1.dll
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/ref/Day_1.dll
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/Day_1.pdb
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.csproj.AssemblyReference.cache
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.AssemblyInfoInputs.cache
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.AssemblyInfo.cs
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.csproj.CoreCompileInputs.cache
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.dll
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/ref/Day_1.dll
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.pdb
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.genruntimeconfig.cache

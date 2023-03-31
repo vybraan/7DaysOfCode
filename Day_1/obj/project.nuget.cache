@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JoCLoGSwGZl+mVnIdUCgm1zkT02XjomVuANVK+Oec/0e8RCb9pTXIj0YXgIBWC9bJco1aN0/TW8sMXddJOs0jg==",
+  "success": true,
+  "projectFilePath": "/home/neray/cypher/csharp/7DaysOfCode/Day_1/Day_1.csproj",
+  "expectedPackageFiles": [
+    "/home/neray/.nuget/packages/restsharp/109.0.1/restsharp.109.0.1.nupkg.sha512",
+    "/home/neray/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
