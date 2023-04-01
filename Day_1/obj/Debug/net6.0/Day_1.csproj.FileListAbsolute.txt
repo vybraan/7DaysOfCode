@@ -13,3 +13,5 @@
 /home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/ref/Day_1.dll
 /home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.pdb
 /home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.genruntimeconfig.cache
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/bin/Debug/net6.0/RestSharp.dll
+/home/neray/cypher/csharp/7DaysOfCode/Day_1/obj/Debug/net6.0/Day_1.csproj.CopyComplete

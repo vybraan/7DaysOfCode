@@ -3,19 +3,18 @@
 
 class Program{
 
-  public static void Main(){
-  using RestSharp;
-using RestSharp.Authenticators;
+  static void Main(string[] args){
 
-var client = new RestClient("https://api.twitter.com/1.1") {
-    Authenticator = new HttpBasicAuthenticator("username", "password")
-};
-var request = new RestRequest("statuses/home_timeline.json");
-var response = await client.GetAsync(request, cancellationToken);
+    string url = "https://pokeapi.co/api/v2/pokemon/";
+
+    var client = new RestClient(url); 
+
+    var request = new RestRequest();
+
+    var response = client.Get(request);
+
+    Console.WriteLine(response.Content.ToString());
   }
 
 
-//var request = new RestRequest("statuses/home_timeline.json");
-//var response = await client.GetAsync(request, cancellationToken);
-//
 }
