@@ -1,5 +1,6 @@
 ﻿using RestSharp;
-
+using System.Text.Json;
+using System.Collections;
 
 class Program{
 
@@ -14,7 +15,27 @@ class Program{
 
     var response = client.Get(request);
 
-    Console.WriteLine(response.Content.ToString());
+
+
+    Mascote mascote = JsonSerializer.Deserialize<Mascote>(response.Content);
+
+    Console.WriteLine("Nome: "+ mascote.Name+"\n"
+    +"Altura: "+mascote.Height+"\n"
+    +"Peso: "+mascote.Weight+"\n"
+    +"Habilidades: "+PrintAbilities(mascote.abilities));
+
+
+  }
+
+  public static string PrintAbilities(List<Ability> abilities){
+    string abilities_names = "";
+
+    foreach (var ability in abilities)
+    {
+      abilities_names += " "+ability.AbilityAbility.Name;
+    }
+
+    return abilities_names;
   }
 
 
