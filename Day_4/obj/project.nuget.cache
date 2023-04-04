@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GXbJaFp/QNf84AJsjrjYA3dJOLri7upGMtCx/JRPk/p+OCYz3crdh2yAf9xDCX/Pk0B9sQSHR1xFMzaKVJ5U5A==",
+  "success": true,
+  "projectFilePath": "/home/neray/cypher/csharp/7DaysOfCode/Day_4/Day_4.csproj",
+  "expectedPackageFiles": [
+    "/home/neray/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
