@@ -1,4 +1,5 @@
 namespace Models;
+
 using System.Text.Json.Serialization;
 
 public class Pokemon
@@ -22,7 +23,7 @@ public class Pokemon
           "Name: " + name + "\n" +
           "Height: " + height + "\n" +
           "Weight: " + weight + "\n" +
-          "Habilidades: " + PrintAbilities(abilities);
+          "Habilidades: " + PrintAbilities(abilities) + "";
     }
 
 
@@ -32,7 +33,7 @@ public class Pokemon
 
         foreach (var ability in abilities)
         {
-            abilities_names += " " + ability.name;
+            abilities_names += " " + ability.ability.name;
         }
 
         return abilities_names;

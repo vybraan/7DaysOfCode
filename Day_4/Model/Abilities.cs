@@ -6,6 +6,6 @@ public class Abilities
 {
 
     [JsonPropertyName("ability")]
-    private Ability ability { get; set; }
+    public Ability ability { get; set; }
 
 }
