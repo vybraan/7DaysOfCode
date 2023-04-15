@@ -9,9 +9,11 @@ public class TamagotchiController
 {
     TamagotchiView tamagotchiView;
     TamagotchiService tamagotchiService = new TamagotchiService("https://pokeapi.co/api/v2/pokemon/");
-    List<Pokemon> pokemons;
+    ArrayList pokemons;
     public string username;
     public string[] pokemonsNames = new string[20];
+
+    public ArrayList mascotesAdotados = new ArrayList();
 
     public TamagotchiController()
     {
@@ -36,19 +38,20 @@ public class TamagotchiController
             switch (optMenu)
             {
                 case 1:
-                    tamagotchiView.AdotarMascoteMenu();
-                    int choosedM = AdotarMascoteMenu(username);
-                    int opt = OpcoesAdotarMascoteMenu(username);
+                    tamagotchiView.AdotarMascoteMenu(tamagotchiService.TamagotchisNameList());
+                    int choosedM = int.Parse(Console.ReadLine());
+                    tamagotchiView.OpcoesAdotarMascoteMenu();
+                    int opt = int.Parse(Console.ReadLine());
                     switch (opt)
                     {
                         case 1:
-                            Mascote mascote = mascotesDisponiveis[choosedM];
-                            Console.WriteLine(PrintMascote(mascote));
+                            // Pokemon poke = (Pokemon) pokemons[choosedM];
+                            Console.WriteLine((Pokemon)pokemons[choosedM]);
 
                             break;
 
                         case 2:
-                            mascotesAdotados.Add(mascotesDisponiveis[choosedM]);
+                            mascotesAdotados.Add(pokemons[choosedM]);
                             Console.WriteLine("Mascote adotado com sucesso");
 
                             break;
@@ -63,9 +66,9 @@ public class TamagotchiController
                 case 2:
                     if (mascotesAdotados != null)
                     {
-                        foreach (Mascote mascote in mascotesAdotados)
+                        foreach (Pokemon pokemon in mascotesAdotados)
                         {
-                            Console.WriteLine(PrintMascote(mascote));
+                            Console.WriteLine(pokemon);
                         }
                     }
                     else

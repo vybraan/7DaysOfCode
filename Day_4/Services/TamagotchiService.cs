@@ -3,12 +3,13 @@ namespace Services;
 using Models;
 using RestSharp;
 using System.Text.Json;
+using System.Collections;
 
 public class TamagotchiService
 {
     private string url;
-    private List<Pokemon> pokemons = new List<Pokemon>();
-
+    private ArrayList pokemons = new ArrayList();
+    private ArrayList pokemonNames = new ArrayList();
     private Random random = new Random(20);
     private RestRequest restRequest = new RestRequest();
 
@@ -17,31 +18,43 @@ public class TamagotchiService
         this.url = url;
     }
 
-    public List<Pokemon> Tamagotchies()
+    public ArrayList Tamagotchies()
     {
-        int range = random.Next(10, 20);
-
-        for (int i = 0; i < range; i++)
+        if (pokemons != null)
         {
-            var client = new RestClient(url + (i + 1));
+            int range = random.Next(10, 20);
 
-            var response = client.Get(restRequest);
-
-            Pokemon pokemon = JsonSerializer.Deserialize<Pokemon>(response.Content);
-            try
+            for (int i = 0; i < range; i++)
             {
+                var client = new RestClient(url + (i + 1));
 
-                this.pokemons.Add(pokemon);
-            }
-            catch (System.NullReferenceException e)
-            {
-                Console.WriteLine("An exeception ocurred");
-                Console.WriteLine(e.ToString());
+                var response = client.Get(restRequest);
+
+                Pokemon pokemon = JsonSerializer.Deserialize<Pokemon>(response.Content);
+                try
+                {
+
+                    this.pokemons.Add(pokemon);
+                    this.pokemonNames.Add(pokemon.name);
+                }
+                catch (System.NullReferenceException e)
+                {
+                    Console.WriteLine("An exeception ocurred");
+                    Console.WriteLine(e.ToString());
+                }
             }
         }
 
         return this.pokemons;
     }
+
+    public ArrayList TamagotchisNameList()
+    {
+        return pokemonNames;
+    }
+
+
+
 
 
 }

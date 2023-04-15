@@ -1,6 +1,6 @@
 namespace Views;
 
-
+using System.Collections;
 
 public class TamagotchiView
 {
@@ -36,7 +36,7 @@ public class TamagotchiView
         Console.Write("OPCAO: ");
     }
 
-    public void AdotarMascoteMenu(List<string> pokemonList)
+    public void AdotarMascoteMenu(ArrayList pokemonList)
     {
         Console.WriteLine("\n -------------- ADOTAR UM MASCOTE -------------- ");
         Console.WriteLine($" Escolha uma especie {username}");
