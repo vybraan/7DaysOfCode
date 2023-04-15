@@ -45,6 +45,7 @@ public class TamagotchiView
         foreach (var pokemon in pokemonList)
         {
             Console.WriteLine($"{i}. {pokemon}");
+            i++;
         }
         Console.Write("OPCAO: ");
     }

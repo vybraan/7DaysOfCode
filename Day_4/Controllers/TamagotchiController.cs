@@ -33,19 +33,22 @@ public class TamagotchiController
         do
         {
             tamagotchiView.MenuPrincipal();
-            optMenu = Convert.ToInt32(Console.Read());
+            optMenu = int.Parse(Console.ReadLine());
+            Console.Clear();
 
             switch (optMenu)
             {
                 case 1:
                     tamagotchiView.AdotarMascoteMenu(tamagotchiService.TamagotchisNameList());
-                    int choosedM = int.Parse(Console.ReadLine());
+                    int choosedM = int.Parse(Console.ReadLine()) - 1;
+                    Console.Clear();
+
                     tamagotchiView.OpcoesAdotarMascoteMenu();
                     int opt = int.Parse(Console.ReadLine());
+                    Console.Clear();
                     switch (opt)
                     {
                         case 1:
-                            // Pokemon poke = (Pokemon) pokemons[choosedM];
                             Console.WriteLine((Pokemon)pokemons[choosedM]);
 
                             break;
@@ -83,8 +86,6 @@ public class TamagotchiController
             }
 
         } while (optMenu != 3);
-
-
 
 
     }
