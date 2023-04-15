@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "69M3+p4Ia9G8tN5heiD/zHk1UqqB5qz2dunBDYdCNAcnyqj1UgWJXjSNSMOE2m9Lr3NLX2P9Spb9TRbOc+efkA==",
+  "dgSpecHash": "6rLt8AS8Ho9W44a6/QY/4ZjbaeNowEi7cz944lIBXijJ1rKi8JvicLkUKBxVvXYkrht1cQzBjWN8PD18vCtyow==",
   "success": true,
   "projectFilePath": "/home/neray/cypher/csharp/7DaysOfCode/Day_5/Day_5.csproj",
   "expectedPackageFiles": [
+    "/home/neray/.nuget/packages/restsharp/110.2.0/restsharp.110.2.0.nupkg.sha512",
+    "/home/neray/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/neray/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/home/neray/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512",
     "/home/neray/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
   ],
   "logs": []
